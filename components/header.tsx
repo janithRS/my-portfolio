@@ -25,7 +25,7 @@ export default function Header() {
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <p className="text-3xl text-gray-400 font-medium">👋 ahoy! i'm</p>
+            <p className="text-3xl text-gray-400 font-medium">👋 ahoy! i am</p>
             <p className="lg:text-7xl text-5xl font-bold">janith silva.</p>
             <p className="lg:text-4xl text-2xl font-normal lg:mt-2">
               Frontend Engineer
