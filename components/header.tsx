@@ -33,7 +33,7 @@ export default function Header() {
 
             <div className="flex lg:justify-start flex-wrap justify-center gap-1 mt-4">
               {skills.map((skill) => (
-                <Badge variant="secondary" className="min-w-max">
+                <Badge key={skill} variant="secondary" className="min-w-max">
                   {skill}
                 </Badge>
               ))}
