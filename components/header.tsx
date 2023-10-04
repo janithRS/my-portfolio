@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Badge } from "./ui/badge";
-import { Card } from "./ui/card";
 import { motion } from "framer-motion";
 
 const skills: string[] = [
@@ -18,7 +17,7 @@ const skills: string[] = [
 
 export default function Header() {
   return (
-    <Card className="flex flex-col mt-4 lg:items-start lg:flex-row lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl backdrop-blur-sm">
+    <div className="flex flex-col mt-4 lg:items-start lg:flex-row lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl border-0">
       <div className="flex flex-col gap-1 mb-5">
         <motion.div
           initial={{ opacity: 0, y: 5 }}
@@ -44,9 +43,9 @@ export default function Header() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <div className="absolute w-60 h-60 lg:backdrop-grayscale lg:hover:backdrop-grayscale-0" />
+        <div className="absolute cursor-pointer w-60 h-60 lg:backdrop-grayscale lg:hover:backdrop-grayscale-0" />
         <Image
-          className="rounded-3xl"
+          className="rounded-3xl cursor-pointer"
           src="/header-image.jpg"
           objectFit="cover"
           width={240}
@@ -54,6 +53,6 @@ export default function Header() {
           alt="hero"
         />
       </motion.div>
-    </Card>
+    </div>
   );
 }

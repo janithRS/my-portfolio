@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { Badge } from "./ui/badge";
 import { Card } from "./ui/card";
 import { motion } from "framer-motion";
 import { Project, ProjectCard } from "./project-card";
@@ -9,57 +7,59 @@ import { FC } from "react";
 
 export const projectsList: Project[] = [
   {
-    title: "Next.js",
-    description: "The React Framework for Production",
-    link: "https://nextjs.org/",
-  },
-  {
-    title: "React",
-    description: "A JavaScript library for building user interfaces",
-    link: "https://reactjs.org/",
-  },
-  {
-    title: "Tailwind CSS",
+    title: "Native flow",
     description:
-      "A utility-first CSS framework for rapidly building custom designs.",
-    link: "https://tailwindcss.com/",
+      "Multi lingual communication platform powered by AI translation engine.",
+    link: "https://native.tech/",
   },
   {
-    title: "TypeScript",
+    title: "Choreo",
     description:
-      "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.",
-    link: "https://www.typescriptlang.org/",
+      "All-in-one platform to Cloud Native Engineering for API Developers.",
+    link: "https://wso2.com/choreo/",
   },
   {
-    title: "GraphQL",
+    title: "Diabipal",
     description:
-      "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.",
-    link: "https://graphql.org/",
+      "A smart mobile application developed to predict diabetes and cardiovascular diseases using ML and OCR technologies.",
+  },
+  {
+    title: "NEMIS - SIS",
+    description:
+      "A web application developed to manage the student information system of the National Institute of Education, Sri Lanka.",
+  },
+  {
+    title: "WSO2 Stream processor",
+    description:
+      "A real-time streaming processor for analyzing and processing events in real-time.",
+    link: "https://wso2.com/streaming-integrator/",
   },
 ];
 
 export const Projects: FC = () => {
   return (
-    <Card className="flex flex-col -pr-12 mt-4 lg:items-start lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
-      <div className="flex flex-col gap-1 mb-5">
-        <motion.div
-          initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <p className="lg:text-5xl text-4xl font-bold">Projects</p>
-        </motion.div>
-      </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row-dense gap-3">
-        {projectsList.length > 0 &&
-          projectsList.map(({ title, description, link }) => (
-            <ProjectCard
-              key={title}
-              description={description}
-              title={title}
-              link={link}
-            />
-          ))}
-      </div>
-    </Card>
+    <motion.div
+      initial={{ opacity: 0, y: 5 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+    >
+      <Card className="flex flex-col -pr-12 mt-4 lg:items-start lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-7 rounded-3xl">
+        <div className="flex flex-col gap-1 mb-5">
+          <p className="lg:text-4xl text-3xl font-bold">Projects</p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row-dense gap-3">
+          {projectsList.length > 0 &&
+            projectsList.map(({ title, description, link }) => (
+              <ProjectCard
+                key={title}
+                description={description}
+                title={title}
+                link={link}
+              />
+            ))}
+        </div>
+      </Card>
+    </motion.div>
   );
 };
