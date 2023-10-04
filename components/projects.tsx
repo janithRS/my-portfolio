@@ -21,12 +21,12 @@ export const projectsList: Project[] = [
   {
     title: "Diabipal",
     description:
-      "A smart mobile application developed to predict diabetes and cardiovascular diseases using ML and OCR technologies.",
+      "A smart mobile application which predicts diabetes and cardiovascular diseases using ML and OCR technologies.",
   },
   {
     title: "NEMIS - SIS",
     description:
-      "A web application developed to manage the student information system of the National Institute of Education, Sri Lanka.",
+      "A web application which manage the student information system of the National Institute of Education, Sri Lanka.",
   },
   {
     title: "WSO2 Stream processor",
@@ -48,7 +48,7 @@ export const Projects: FC = () => {
           <p className="lg:text-4xl text-3xl font-bold">Projects</p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row-dense gap-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense gap-3">
           {projectsList.length > 0 &&
             projectsList.map(({ title, description, link }) => (
               <ProjectCard

@@ -11,8 +11,8 @@ export interface Project {
 export const ProjectCard: FC<Project> = ({ title, description, link }) => {
   return (
     <Card className="w-full h-full cursor-pointer text-center lg:text-left rounded-xl">
-      <CardHeader className="text-xl">{title}</CardHeader>
-      <CardContent>
+      <CardHeader className="lg:text-xl text-base">{title}</CardHeader>
+      <CardContent className="lg:text-base text-sm">
         {description}
         {link && (
           <div className="flex lg:justify-start justify-center items-center mt-4 bg-gradient-to-r bg-clip-text text-transparent from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 underline">
