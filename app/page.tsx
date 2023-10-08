@@ -1,4 +1,4 @@
-import { Experience } from "@/components/experience";
+import { Experience } from "@/components/experiences";
 import Header from "@/components/header";
 import NavBar from "@/components/nav-bar";
 import { Projects } from "@/components/projects";
