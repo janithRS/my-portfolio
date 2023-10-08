@@ -2,7 +2,6 @@ import { Experience } from "@/components/experience";
 import Header from "@/components/header";
 import NavBar from "@/components/nav-bar";
 import { Projects } from "@/components/projects";
-import { Separator } from "@/components/ui/separator";
 import { Red_Hat_Display } from "next/font/google";
 
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
