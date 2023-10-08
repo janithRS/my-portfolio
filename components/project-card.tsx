@@ -30,9 +30,8 @@ export const ProjectCard: FC<Project> = ({
       <CardHeader className="lg:text-xl font-semibold text-base">
         {title}
       </CardHeader>
-      <CardContent className="lg:text-base text-sm">
-        {description}
-
+      <CardContent className="text-sm">
+        <div className="mb-4">{description}</div>
         {technologies && <StackChips technologies={technologies} />}
         {link && (
           <div className="flex lg:justify-start justify-center items-center mt-4 bg-gradient-to-r bg-clip-text text-transparent from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 underline">

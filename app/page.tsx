@@ -1,4 +1,4 @@
-import { Experience } from "@/components/Experience";
+import { Experience } from "@/components/experience";
 import Header from "@/components/header";
 import NavBar from "@/components/nav-bar";
 import { Projects } from "@/components/projects";
@@ -13,9 +13,8 @@ export default function Home() {
       <section className="flex flex-col lg:px-72 p-4 mt-14">
         <NavBar />
         <Header />
-        {/* <Separator className="my-1 px-5" /> */}
+        <Experience />
         <Projects />
-        {/* <Experience /> */}
       </section>
     </main>
   );

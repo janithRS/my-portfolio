@@ -80,7 +80,7 @@ export const Projects: FC = () => {
     >
       <div className="flex flex-col mt-1 lg:items-start lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
         <div className="flex flex-col gap-1 mb-5">
-          <p className="lg:text-4xl text-3xl font-bold">Projects</p>
+          <p className="lg:text-2xl text-xl font-bold">Projects</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense gap-3">
