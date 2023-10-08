@@ -23,7 +23,8 @@ export const ExperienceCard: FC<ExperienceProps> = ({
     <Card className="w-full h-full cursor-pointer text-left rounded-xl">
       <CardHeader className="flex flex-row font-normal text-base items-start justify-between">
         <div>
-          {company} · <span className="text-gray-400">{title}</span>
+          <span className="font-semibold">{company} </span> ·{" "}
+          <span className="text-gray-400">{title}</span>
           <div className="text-xs text-gray-400 uppercase">
             {startYr} - {endYr}
           </div>

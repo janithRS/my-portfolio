@@ -13,6 +13,7 @@ export const projectsList: Project[] = [
     technologies: [
       "React",
       "SignalR",
+      "mono-repo",
       "React Query",
       "Next.js",
       "TypeScript",
