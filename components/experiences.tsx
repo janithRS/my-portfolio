@@ -49,7 +49,7 @@ export const experienceList: ExperienceProps[] = [
     title: "Intern",
     description:
       "Developed a user-friendly front-end guided tour for the WSO2 Stream Processor and designed and implemented a highly customizable front-end test framework using Selenium.",
-    img: "WSO2-logo.png",
+    img: "wso2-logo.png",
     startYr: "2018 Dec",
     endYr: "2019 Jun",
   },
