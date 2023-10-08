@@ -28,7 +28,7 @@ export const ExperienceCard: FC<ExperienceProps> = ({
             {startYr} - {endYr}
           </div>
         </div>
-        {img && <Image src={`/${img}`} alt="WSO2" width={60} height={60} />}
+        {img && <Image src={`/${img}`} alt={img} width={60} height={60} />}
       </CardHeader>
       <CardContent className="text-sm">{description}</CardContent>
     </Card>

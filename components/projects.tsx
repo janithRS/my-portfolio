@@ -26,7 +26,7 @@ export const projectsList: Project[] = [
   {
     title: "Choreo",
     description:
-      "All-in-one platform to Cloud Native Engineering for API Developers.",
+      "All-in-one platform to develop and manage APIs, integrations, and digital services.",
     link: "https://wso2.com/choreo/",
     technologies: [
       "React",
@@ -64,8 +64,7 @@ export const projectsList: Project[] = [
   },
   {
     title: "WSO2 Stream processor",
-    description:
-      "Design and implement a fresh user-guided tour using Enjoy Hint JS library for WSO2 Stream Processor UI",
+    description: "A real-time streaming data analysis platform.",
     link: "https://wso2.com/streaming-integrator/",
     technologies: ["Javascript", "Enjoy Hints"],
   },
@@ -78,9 +77,10 @@ export const Projects: FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
-      <div className="flex flex-col mt-1 lg:items-start lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
-        <div className="flex flex-col gap-1 mb-5">
+      <div className="flex flex-col lg:w-full justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
+        <div className="flex items-center flex-row gap-1 mb-5">
           <p className="lg:text-2xl text-xl font-bold">Projects</p>
+          <div className="w-full h-[0.5px] bg-gray-200 dark:bg-gray-800 ml-2"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense gap-3">

@@ -46,7 +46,7 @@ export const experienceList: ExperienceProps[] = [
   },
   {
     company: "WSO2",
-    title: "Software Engineering Intern",
+    title: "Intern",
     description:
       "Developed a user-friendly front-end guided tour for the WSO2 Stream Processor and designed and implemented a highly customizable front-end test framework using Selenium.",
     img: "WSO2-logo.png",
@@ -62,9 +62,10 @@ export const Experience: FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
-      <div className="flex flex-col mt-1 lg:items-start lg:w-full items-center justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
-        <div className="flex flex-col gap-1 mb-5">
+      <div className="flex flex-col mt-1 lg:w-full justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
+        <div className="flex items-center flex-row gap-1 mb-5">
           <p className="lg:text-2xl text-xl font-bold">Experience</p>
+          <div className="w-full h-[0.5px] bg-gray-200 dark:bg-gray-800 ml-3 mt-1"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense gap-3">
@@ -82,7 +83,7 @@ export const Experience: FC = () => {
                 />
               )
             )}
-          <Card className="flex text-center w-full h-full cursor-pointer justify-center items-center rounded-xl border-0">
+          <Card className="flex text-center w-full h-full cursor-pointer justify-center items-center rounded-xl border-0 shadow-none mt-5 lg:mt-0">
             <Link
               className="flex flex-row items-center gap-1 hover:gap-2"
               target="_blank"
