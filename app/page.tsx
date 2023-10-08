@@ -2,6 +2,7 @@
 
 import { Contact } from "@/components/contact";
 import { Experience } from "@/components/experiences";
+import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import { LatestBlogs } from "@/components/latest-blogs";
 import NavBar from "@/components/nav-bar";
@@ -24,6 +25,7 @@ export default function Home() {
           <Projects />
           <LatestBlogs />
           <Contact />
+          <Footer />
         </section>
       </main>
     </QueryClientProvider>

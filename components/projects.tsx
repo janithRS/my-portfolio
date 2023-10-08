@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { Project, ProjectCard } from "./project-card";
 import { FC } from "react";
+import { Card } from "./ui/card";
+import Link from "next/link";
+import { FaChevronRight } from "react-icons/fa";
 
 export const projectsList: Project[] = [
   {
@@ -96,6 +99,15 @@ export const Projects: FC = () => {
                 isLatest={title === "Native flow"}
               />
             ))}
+          <Card className="flex text-center w-full h-full cursor-pointer justify-center items-center rounded-xl border-0 shadow-none mt-5 lg:mt-0">
+            <Link
+              className="flex flex-row items-center gap-1 hover:gap-2"
+              target="_blank"
+              href="https://www.linkedin.com/in/janithrs/"
+            >
+              View LinkedIn <FaChevronRight />
+            </Link>
+          </Card>
         </div>
       </div>
     </motion.div>
