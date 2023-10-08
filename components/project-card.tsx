@@ -19,7 +19,7 @@ export const ProjectCard: FC<Project> = ({
   isLatest,
 }) => {
   return (
-    <Card className="w-full h-full cursor-pointer text-left lg:text-left rounded-xl">
+    <Card className="w-full h-full cursor-pointer text-left lg:text-left rounded-xl shadow-none">
       {isLatest && (
         <div className="flex justify-end -mb-4">
           <div className="bg-gradient-to-r from-green-400 to-blue-500 px-2 py-1 text-sm text-white font-semibold rounded-tr-lg rounded-bl-lg">

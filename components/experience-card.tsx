@@ -20,7 +20,7 @@ export const ExperienceCard: FC<ExperienceProps> = ({
   img,
 }) => {
   return (
-    <Card className="w-full h-full cursor-pointer text-left rounded-xl">
+    <Card className="w-full h-full cursor-pointer text-left rounded-xl shadow-none">
       <CardHeader className="flex flex-row font-normal text-base items-start justify-between">
         <div>
           <span className="font-semibold">{company} </span> ·{" "}

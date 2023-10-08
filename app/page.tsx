@@ -1,5 +1,6 @@
 "use client";
 
+import { Contact } from "@/components/contact";
 import { Experience } from "@/components/experiences";
 import Header from "@/components/header";
 import { LatestBlogs } from "@/components/latest-blogs";
@@ -22,6 +23,7 @@ export default function Home() {
           <Experience />
           <Projects />
           <LatestBlogs />
+          <Contact />
         </section>
       </main>
     </QueryClientProvider>

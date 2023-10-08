@@ -32,7 +32,7 @@ export const LatestBlogs: FC = () => {
             posts.items.slice(0, 2).map((post) => (
               <Card
                 key={post.guid}
-                className="flex flex-col w-full h-full cursor-pointer rounded-xl"
+                className="flex flex-col w-full h-full cursor-pointer rounded-xl shadow-none"
               >
                 <Image
                   src={post.thumbnail}
