@@ -17,10 +17,10 @@ export const Contact: FC = () => {
         </div>
 
         <Card className="flex flex-col w-full h-full cursor-pointer rounded-xl shadow-none">
-          <CardHeader className="text-lg font-semibold">
-            Get In Touch
+          <CardHeader className="text-base font-semibold">
+            Get In Touch!
           </CardHeader>
-          <CardContent>
+          <CardContent className="text-sm">
             My inbox is always open. Whether you have a question or just want to
             say hi, I will try my best to get back to you!
             <div className="flex mt-4 bg-gradient-to-r bg-clip-text text-transparent from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 underline">
