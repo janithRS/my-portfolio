@@ -37,7 +37,7 @@ export default function NavBar() {
             animate={{ opacity: 1, y: 0 }}
             className="text-2xl font-bold"
           >
-            JantihRS.
+            JanithRS.
           </motion.span>
         </li>
         <li className="flex items-center gap-4">
