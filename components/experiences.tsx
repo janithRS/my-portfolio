@@ -23,8 +23,8 @@ export const experienceList: ExperienceProps[] = [
     description:
       "Collaborated with other engineers to develop the Choreo web application and build the GraphQL API.",
     img: "wso2-logo.png",
-    startYr: "2021 Aug",
-    endYr: "2022 Jul",
+    startYr: "2020 Dec",
+    endYr: "2023 Jul",
   },
   {
     company: "SEF",
