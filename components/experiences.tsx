@@ -87,7 +87,7 @@ export const Experience: FC = () => {
             <Link
               className="flex flex-row items-center gap-1 hover:gap-2"
               target="_blank"
-              href="https://drive.google.com/file/d/1vxTJEbx4mAeX7-Hb7O29Mkoir7hVgrxM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ywiuNht8GvxuJ81oxZevEEcDRzvoTstp/view?usp=sharing"
             >
               View Full Résumé <FaChevronRight />
             </Link>
