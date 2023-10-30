@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <QueryClientProvider client={queryClient}>
       <main className={redHatDisplay.className}>
-        <section className="flex flex-col xl:px-52 lg:px-40 2xl:px-72 p-4 mt-14">
+        <section className="flex flex-col sm:px-0 md:px-20 lg:px-32 xl:px-52 2xl:px-72 mt-14">
           <NavBar />
           <Header />
           <Experience />

@@ -62,7 +62,7 @@ export const Experience: FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
-      <div className="flex flex-col mt-1 lg:w-full justify-center lg:justify-between lg:text-left text-center w-full p-6 rounded-3xl">
+      <div className="flex flex-col mt-1 lg:w-full justify-center lg:justify-between lg:text-left text-center w-full rounded-3xl pb-6">
         <div className="flex items-center flex-row gap-1 mb-5">
           <p className="lg:text-2xl text-xl font-bold">Experience</p>
           <div className="w-full h-[0.5px] bg-gray-200 dark:bg-gray-800 ml-3 mt-1"></div>
@@ -87,7 +87,7 @@ export const Experience: FC = () => {
             <Link
               className="flex flex-row items-center gap-1 hover:gap-2"
               target="_blank"
-              href="https://drive.google.com/file/d/17MBW-12UX4TDRnwH8OcOGIZ63lH2r9HT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1vxTJEbx4mAeX7-Hb7O29Mkoir7hVgrxM/view?usp=sharing"
             >
               View Full Résumé <FaChevronRight />
             </Link>

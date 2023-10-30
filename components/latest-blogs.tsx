@@ -21,7 +21,7 @@ export const LatestBlogs: FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
-      <div className="flex flex-col mt-1 lg:w-full justify-center w-full p-6 rounded-3xl">
+      <div className="flex flex-col mt-1 lg:w-full justify-center w-full rounded-3xl pb-6">
         <div className="flex items-center flex-row gap-1 mb-5">
           <p className="lg:text-2xl text-xl font-bold">Blogs</p>
           <div className="w-full h-[0.5px] bg-gray-200 dark:bg-gray-800 ml-3 mt-1"></div>
