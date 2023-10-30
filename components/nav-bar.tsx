@@ -29,7 +29,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full sm:px-0 md:px-20 lg:px-32 xl:px-52 2xl:px-72 p-6 pt-4 dark:bg-slate-950 bg-white">
+    <nav className="fixed top-0 left-0 z-50 w-full sm:px-3 md:px-20 lg:px-32 xl:px-52 2xl:px-72 p-6 pt-4 dark:bg-slate-950 bg-white">
       <ul className="flex items-center justify-between">
         <li>
           <motion.span
