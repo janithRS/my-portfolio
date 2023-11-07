@@ -11,7 +11,7 @@ export const projectsList: Project[] = [
   {
     title: "Native flow",
     description:
-      "Multi lingual communication platform powered by AI translation engine.",
+      "Multi lingual communication platform powered by an AI translation engine.",
     link: "https://native.tech/",
     technologies: [
       "React",
@@ -63,12 +63,13 @@ export const projectsList: Project[] = [
   {
     title: "NEMIS - SIS",
     description:
-      "A web application which manage the student information system of the National Institute of Education, Sri Lanka.",
+      "A web application developed to manage the student information of the National Institute of Education, Sri Lanka.",
     technologies: ["PHP", "Laravel", "MySQL"],
   },
   {
     title: "WSO2 Stream processor",
-    description: "A real-time streaming data analysis platform.",
+    description:
+      "An open source, scalable, and cloud native stream processing platform from WSO2",
     link: "https://wso2.com/streaming-integrator/",
     technologies: ["Javascript", "Enjoy Hints"],
   },
