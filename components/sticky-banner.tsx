@@ -1,48 +1,59 @@
-import { FaRegWindowClose } from "react-icons/fa";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 export const StickyBanner = () => {
-  return (
-    <div
-      id="sticky-banner"
-      tabIndex={-1}
-      className="fixed top-0 left-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600"
-    >
-      <div className="flex items-center mx-auto">
-        <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-          <span className="inline-flex p-1 mr-3 bg-gray-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center">
-            <svg
-              className="w-3 h-3 text-gray-500 dark:text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 18 19"
-            >
-              <path d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z" />
-            </svg>
-            <span className="sr-only">Light bulb</span>
-          </span>
-          <span>
-            New brand identity has been launched for the{" "}
-            <a
-              href="https://flowbite.com"
-              className="inline font-medium text-blue-600 underline dark:text-blue-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline"
-            >
-              Flowbite Library
-            </a>
-          </span>
-        </p>
-      </div>
-      <div className="flex items-center">
-        <button
-          data-dismiss-target="#sticky-banner"
-          type="button"
-          className="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          <FaRegWindowClose size={20} />
+  const handleBannerClose = () => {
+    const banner = document.getElementById("banner");
+    banner?.remove();
+  };
 
-          <span className="sr-only">Close banner</span>
+  return (
+    <motion.div
+      id="banner"
+      initial={{ opacity: 0, y: -5 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+      className="hidden lg:flex justify-center z-50 w-full  py-3 bg-gradient-to-r from-pink-500 to-yellow-500"
+    >
+      <div className="flex text-sm items-center text-center text-white">
+        Hey there! Check out my latest videos on{" "}
+        <Link
+          className="font-bold flex mx-1 items-center"
+          href="https://www.youtube.com/@kathabus"
+          target="_blank"
+        >
+          YouTube
+          <FaExternalLinkSquareAlt />
+        </Link>{" "}
+        and listen to my podcast on{" "}
+        <Link
+          className="font-bold flex ml-1 items-center"
+          target="_blank"
+          href="https://podcasters.spotify.com/pod/show/kathabus/episodes/ep-e1dla5j"
+        >
+          Spotify <FaExternalLinkSquareAlt />
+        </Link>
+        <button
+          className="absolute right-4 hover:text-gray-100"
+          onClick={handleBannerClose}
+        >
+          <span className="sr-only">Dismiss</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+            className="h-6 w-6 text-white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };

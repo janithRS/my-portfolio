@@ -30,7 +30,7 @@ export default function Header() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <div className="absolute cursor-pointer w-60 h-60 lg:backdrop-grayscale lg:hover:backdrop-grayscale-0" />
+        <div className="absolute cursor-pointer w-60 h-60" />
         <Image
           className="rounded-3xl cursor-pointer"
           src="/header-image.jpg"
