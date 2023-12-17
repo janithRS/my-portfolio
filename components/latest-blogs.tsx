@@ -4,16 +4,12 @@ import { useGetMediumPosts } from "@/api/posts/use-get-medium-posts";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { Card, CardHeader } from "./ui/card";
 
 export const LatestBlogs: FC = () => {
   const { data: posts } = useGetMediumPosts();
-
-  useEffect(() => {
-    console.log(posts);
-  }, [posts]);
 
   return (
     <motion.div
@@ -32,15 +28,17 @@ export const LatestBlogs: FC = () => {
             posts.items.slice(0, 2).map((post) => (
               <Card
                 key={post.guid}
-                className="flex flex-col w-full h-full cursor-pointer rounded-xl shadow-none"
+                className="flex flex-col w-full h-full cursor-pointer rounded-xl shadow-none pt-4"
               >
-                <Image
-                  src={post.thumbnail}
-                  alt={post.thumbnail}
-                  width={500}
-                  height={100}
-                  className="rounded-xl w-full items-center justify-center p-2"
-                />
+                {post.thumbnail && (
+                  <Image
+                    src={post.thumbnail}
+                    alt={post.thumbnail}
+                    width={500}
+                    height={100}
+                    className="rounded-xl w-full items-center justify-center p-2"
+                  />
+                )}
                 <CardHeader className="font-normal text-base -mt-5">
                   {post.title}
                   <div className="flex mt-4 bg-gradient-to-r bg-clip-text text-transparent from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 underline">
