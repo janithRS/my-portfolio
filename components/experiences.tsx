@@ -9,6 +9,15 @@ import { Card } from "./ui/card";
 
 export const experienceList: ExperienceProps[] = [
   {
+    company: "FNZ",
+    title: "Frontend Engineer",
+    description:
+      "Transforming financial complexities into seamless user experiences through expertise in fintech front-end technologies..",
+    img: "FNZ-logo.jpg",
+    startYr: "2023 Jan",
+    endYr: "Present",
+  },
+  {
     company: "Native",
     title: "Frontend Engineer",
     description:
@@ -70,8 +79,9 @@ export const Experience: FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense gap-3">
           {experienceList.length > 0 &&
-            experienceList.map(
-              ({ title, description, img, company, endYr, startYr }) => (
+            experienceList
+              .slice(0, 5)
+              .map(({ title, description, img, company, endYr, startYr }) => (
                 <ExperienceCard
                   key={title}
                   company={company}
@@ -81,8 +91,7 @@ export const Experience: FC = () => {
                   endYr={endYr}
                   startYr={startYr}
                 />
-              )
-            )}
+              ))}
           <Card className="flex text-center w-full h-full cursor-pointer justify-center items-center rounded-xl border-0 shadow-none mt-5 lg:mt-0">
             <Link
               className="flex flex-row items-center gap-1 hover:gap-2"

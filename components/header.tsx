@@ -18,7 +18,7 @@ export default function Header() {
           </p>
           <p className="lg:text-lg md text-sm text-gray-500 font-normal mt-2 ">
             and I make{" "}
-            <span className="font-semibold text-white bg-gradient-to-r from-pink-500 to-yellow-500 px-1">
+            <span className="font-semibold text-white bg-gradient-to-r from-pink-500 to-yellow-500 px-1 animate-gradient">
               solid frontend products
             </span>{" "}
             with amazing user experiences.
@@ -33,7 +33,7 @@ export default function Header() {
         <div className="absolute cursor-pointer w-60 h-60" />
         <Image
           className="rounded-3xl cursor-pointer"
-          src="/header-image.jpg"
+          src="/header-image-2.jpg"
           objectFit="cover"
           width={240}
           height={240}
