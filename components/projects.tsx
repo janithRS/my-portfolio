@@ -9,6 +9,24 @@ import { FaChevronRight } from "react-icons/fa";
 
 export const projectsList: Project[] = [
   {
+    title: "GVC Gaesco",
+    description:
+      "Financial platform for GVC Gaesco, a Spanish financial services company.",
+    link: "https://gvcgaesco.es/es/inversion/",
+    technologies: [
+      "React",
+      "C#",
+      "ASP.NET",
+      "SQL Server",
+      "React Query",
+      "TypeScript",
+      "React Hooks",
+      "React Testing Library",
+      "YUP",
+      "Function Components",
+    ],
+  },
+  {
     title: "Native flow",
     description:
       "Multi lingual communication platform powered by an AI translation engine.",

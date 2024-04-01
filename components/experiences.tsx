@@ -10,9 +10,9 @@ import { Card } from "./ui/card";
 export const experienceList: ExperienceProps[] = [
   {
     company: "FNZ",
-    title: "Frontend Engineer",
+    title: "Software Engineer",
     description:
-      "Transforming financial complexities into seamless user experiences through expertise in fintech front-end technologies..",
+      "Transforming financial complexities into seamless user experiences through expertise in fintech front-end technologies.",
     img: "FNZ-logo.jpg",
     startYr: "2023 Jan",
     endYr: "Present",
@@ -96,9 +96,9 @@ export const Experience: FC = () => {
             <Link
               className="flex flex-row items-center gap-1 hover:gap-2"
               target="_blank"
-              href="https://drive.google.com/file/d/1ywiuNht8GvxuJ81oxZevEEcDRzvoTstp/view?usp=sharing"
+              href="https://www.linkedin.com/in/janithrs/"
             >
-              View Full Résumé <FaChevronRight />
+              View Full Resume <FaChevronRight />
             </Link>
           </Card>
         </div>
