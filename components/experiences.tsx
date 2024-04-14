@@ -14,7 +14,7 @@ export const experienceList: ExperienceProps[] = [
     description:
       "Transforming financial complexities into seamless user experiences through expertise in fintech front-end technologies.",
     img: "FNZ-logo.jpg",
-    startYr: "2023 Jan",
+    startYr: "2024 Jan",
     endYr: "Present",
   },
   {
@@ -41,7 +41,7 @@ export const experienceList: ExperienceProps[] = [
     description:
       "Managed the design team and collaborated closely with the engineering team to produce exceptional UI designs and compelling social media content.",
     img: "SEF-logo.png",
-    startYr: "2018 JUN",
+    startYr: "2018 Jun",
     endYr: "2021 Jun",
   },
   {
