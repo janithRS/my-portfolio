@@ -20,7 +20,7 @@ export const StickyBanner = () => {
         Hey there! Check out my latest videos on{" "}
         <Link
           className="font-bold flex mx-1 items-center"
-          href="https://www.youtube.com/@kathabus"
+          href="https://www.youtube.com/@JanithIO"
           target="_blank"
         >
           YouTube

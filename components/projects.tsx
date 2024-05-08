@@ -108,16 +108,18 @@ export const Projects: FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense gap-3">
           {projectsList.length > 0 &&
-            projectsList.map(({ title, description, link, technologies }) => (
-              <ProjectCard
-                key={title}
-                description={description}
-                title={title}
-                link={link}
-                technologies={technologies}
-                isLatest={title === "Native flow"}
-              />
-            ))}
+            projectsList
+              .slice(0, 5)
+              .map(({ title, description, link, technologies }) => (
+                <ProjectCard
+                  key={title}
+                  description={description}
+                  title={title}
+                  link={link}
+                  technologies={technologies}
+                  isLatest={title === "GVC Gaesco"}
+                />
+              ))}
           <Card className="flex text-center w-full h-full cursor-pointer justify-center items-center rounded-xl border-0 shadow-none mt-5 lg:mt-0">
             <Link
               className="flex flex-row items-center gap-1 hover:gap-2"

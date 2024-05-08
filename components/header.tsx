@@ -14,12 +14,12 @@ export default function Header() {
           <p className="text-3xl text-gray-400 font-medium">👋 ahoy! i am</p>
           <p className="lg:text-7xl text-5xl font-bold">Janith Silva,</p>
           <p className="lg:text-4xl text-2xl font-normal lg:mt-2">
-            a frontend engineer
+            a software engineer
           </p>
           <p className="lg:text-lg md text-sm text-gray-500 font-normal mt-2 ">
             and I make{" "}
             <span className="font-semibold text-white bg-gradient-to-r from-pink-500 to-yellow-500 px-1 animate-gradient">
-              solid frontend products
+              solid products
             </span>{" "}
             with amazing user experiences.
           </p>
