@@ -9,6 +9,20 @@ import { FaChevronRight } from "react-icons/fa";
 
 export const projectsList: Project[] = [
   {
+    title: "Paylocity Payroll",
+    description:
+      "Payroll platform for Paylocity, a US employee benefits company.",
+    link: "https://gvcgaesco.es/es/inversion/",
+    technologies: [
+      "React",
+      "React Query",
+      "TypeScript",
+      "React Hooks",
+      "React Testing Library",
+      "Functional Components",
+    ],
+  },
+  {
     title: "GVC Gaesco",
     description:
       "Financial platform for GVC Gaesco, a Spanish financial services company.",
@@ -23,7 +37,7 @@ export const projectsList: Project[] = [
       "React Hooks",
       "React Testing Library",
       "YUP",
-      "Function Components",
+      "Functional Components",
     ],
   },
   {
@@ -42,7 +56,7 @@ export const projectsList: Project[] = [
       "React Testing Library",
       "YUP",
       "Material UI",
-      "Function Components",
+      "Functional Components",
     ],
   },
   {
@@ -55,7 +69,7 @@ export const projectsList: Project[] = [
       "React Query",
       "MSW",
       "Material UI",
-      "Function Components",
+      "Functional Components",
       "TypeScript",
       "React Hooks",
       "GraphQL",
@@ -110,14 +124,14 @@ export const Projects: FC = () => {
           {projectsList.length > 0 &&
             projectsList
               .slice(0, 5)
-              .map(({ title, description, link, technologies }) => (
+              .map(({ title, description, link, technologies }, index) => (
                 <ProjectCard
                   key={title}
                   description={description}
                   title={title}
                   link={link}
                   technologies={technologies}
-                  isLatest={title === "GVC Gaesco"}
+                  isLatest={index === 0}
                 />
               ))}
           <Card className="flex text-center w-full h-full cursor-pointer justify-center items-center rounded-xl border-0 shadow-none mt-5 lg:mt-0">

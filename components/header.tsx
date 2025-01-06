@@ -33,7 +33,7 @@ export default function Header() {
         <div className="absolute cursor-pointer w-60 h-60" />
         <Image
           className="rounded-3xl cursor-pointer"
-          src="/header-image-2.jpg"
+          src="/header-image-3.jpeg"
           objectFit="cover"
           width={240}
           height={240}

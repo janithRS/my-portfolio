@@ -9,13 +9,22 @@ import { Card } from "./ui/card";
 
 export const experienceList: ExperienceProps[] = [
   {
+    company: "Paylocity",
+    title: "Software Engineer",
+    description:
+      "Working on the Payroll platform for Paylocity, a US employee benefits company.",
+    img: "pcty-logo2.png",
+    startYr: "2024 Nov",
+    endYr: "Present",
+  },
+  {
     company: "FNZ",
     title: "Software Engineer",
     description:
-      "Transforming financial complexities into seamless user experiences through expertise in fintech front-end technologies.",
+      "Worked on transforming financial complexities into seamless user experiences through expertise in fintech front-end technologies.",
     img: "FNZ-logo.jpg",
     startYr: "2024 Jan",
-    endYr: "Present",
+    endYr: "2024 Nov",
   },
   {
     company: "Native",
