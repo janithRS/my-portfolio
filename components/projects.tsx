@@ -12,7 +12,7 @@ export const projectsList: Project[] = [
     title: "Paylocity Payroll",
     description:
       "Payroll platform for Paylocity, a US employee benefits company.",
-    link: "https://gvcgaesco.es/es/inversion/",
+    link: "https://www.paylocity.com/",
     technologies: [
       "React",
       "React Query",
